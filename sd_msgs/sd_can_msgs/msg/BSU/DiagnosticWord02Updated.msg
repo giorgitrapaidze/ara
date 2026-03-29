@@ -1,0 +1,22 @@
+std_msgs/Header header
+
+# Diagnostic word information for BSU
+uint8 rc_force_race_mode                    # RC Force Race Mode (0..1)
+uint8 rc_beacon_time_out                     # RC Beacon Timeout (0..1)
+uint8 display_timeout_error                   # Display Timeout Error (0..1)
+uint8 rm_red_flag                             # RM Red Flag (0..1)
+uint8 rm_safe_stop                            # RM Safe Stop (0..1)
+uint8 display_counter_error                   # Display Counter Error (0..1)
+uint8 cba_em_brake_sat_not_received          # CBA EM Brake Sat Not Received (0..1)
+uint8 cba_sat_values_not_received             # CBA Sat Values Not Received (0..1)
+uint8 ice_oil_temp_start_limit_not_rec       # ICE Oil Temp Start Limit Not Received (0..1)
+uint8 ml_stop_brake_sat_not_received          # ML Stop Brake Sat Not Received (0..1)
+uint8 psa_sat_values_not_received              # PSA Sat Values Not Received (0..1)
+uint8 limp_sat_values_not_received             # Limp Sat Values Not Received (0..1)
+uint8 fan_car_speed_max_value_not_rec         # Fan Car Speed Max Value Not Received (0..1)
+uint8 fan_car_speed_min_value_not_rec         # Fan Car Speed Min Value Not Received (0..1)
+uint8 fan_water_temp_max_value_not_rec        # Fan Water Temp Max Value Not Received (0..1)
+uint8 fan_water_temp_min_value_not_rec        # Fan Water Temp Min Value Not Received (0..1)
+uint8 heater_oil_temp_max_value_not_rec       # Heater Oil Temp Max Value Not Received (0..1)
+uint8 ice_fuel_pres_start_limit_not_rec       # ICE Fuel Pres Start Limit Not Received (0..1)
+uint8 ice_oil_temp_by_pass_not_received       # ICE Oil Temp Bypass Not Received (0..1)

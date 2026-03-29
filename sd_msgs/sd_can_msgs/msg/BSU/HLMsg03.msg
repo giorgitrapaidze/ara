@@ -1,0 +1,31 @@
+# EAC24BsuHlMsg03.msg
+std_msgs/Header header
+
+# HL message for the system
+uint8 hl_alive_03                      # Alive status (0..15)
+uint8 hl_dbw_enable                      # DBW (Drive by Wire) enabled status (0..1)
+uint8 hl_push_to_pass_on               # Push-to-pass status (0..1)
+uint8 hl_pdu12_activate_gnss            # GNSS activation status (0..1)
+uint8 hl_pdu12_activate_oss              # OSS activation status (0..1)
+uint8 hl_ice_enable                      # ICE (Internal Combustion Engine) enabled status (0..1)
+
+# ========== NEW v7 ML SUPERVISOR SIGNAL ==========
+uint8 hl_ml_supervisor_activation        # ML Supervisor Activation Status (0..1) - New in v7
+# =================================================
+
+uint8 hl_pdu12_activate_lidar            # Lidar activation status (0..1)
+uint8 hl_pdu12_activate_radar            # Radar activation status (0..1)
+float64 ice_start_fuel_level_l          # Start fuel level in liters (0..655.35)
+uint8 hl_crancking_by_pass               # Cranking bypass status (0..1)
+uint8 hl_switch_off_ok                   # Switch-off confirmation status (0..1)
+
+std_msgs/Header header_legacy
+uint8 hl_pdu1_activate_gnss_legacy        # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_oss_legacy         # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_lidar_r_legacy     # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_lidar_cn_legacy    # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_lidar_l_legacy     # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_radar_rear_legacy  # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_radar_cn_legacy    # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_radar_r_legacy     # Range: 0..1 (0..1 bool)
+uint8 hl_pdu1_activate_radar_l_legacy     # Range: 0..1 (0..1 bool)

@@ -1,0 +1,15 @@
+{
+  "name": "co-driver",
+  "version": "1.0.0",
+  "description": "AI Racing Coach API — compares driver laps against a reference",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "@mcap/core": "^2.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}

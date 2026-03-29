@@ -1,0 +1,15 @@
+std_msgs/Header header
+
+# EM status for the system
+uint8 dcdc4812_voltage_v       # Voltage in volts (0..25.4 bar)
+uint16 em_status                # EM status code
+float64 hl_stop_deceleration_1   # Deceleration 1 in m/s
+float64 hl_stop_deceleration_2   # Deceleration 2 in m/s
+float64 hl_stop_time_to_dec_1    # Time to deceleration 1 in seconds
+float64 hl_stop_time_to_dec_2    # Time to deceleration 2 in seconds
+
+# Fields from the legacy message
+#Range: 0..120_legacy (0..12 bar)
+float64 emb_line_pressure_bar_legacy
+#Range: 0..120_legacy (0..12 bar)
+float64 emb_tank_pressure_bar_legacy

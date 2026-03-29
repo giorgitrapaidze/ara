@@ -1,0 +1,8 @@
+std_msgs/Header header
+
+uint8 cba_rl_sw_minor_version
+uint8 cba_rl_sw_major_version
+uint16 cba_rl_sw_build_version
+uint8 cba_rr_sw_minor_version
+uint8 cba_rr_sw_major_version
+uint16 cba_rr_sw_build_version

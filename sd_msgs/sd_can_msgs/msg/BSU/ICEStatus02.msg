@@ -1,0 +1,7 @@
+std_msgs/Header header
+
+float64 ice_oil_temp_deg_c
+float64 ice_engine_speed_rpm
+float64 ice_fuel_press_k_pa
+float64 ice_water_temp_deg_c
+float64 ice_oil_press_k_pa
