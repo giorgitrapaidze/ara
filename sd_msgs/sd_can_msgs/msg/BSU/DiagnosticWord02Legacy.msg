@@ -1,4 +1,0 @@
-std_msgs/Header header
-
-bool rc_force_race_mode
-bool rc_beacon_time_out

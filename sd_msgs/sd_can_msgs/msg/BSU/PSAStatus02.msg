@@ -1,6 +1,0 @@
-std_msgs/Header header
-
-float64 psa_target_psa_control_ack
-float64 psa_actual_pos
-float64 psa_actual_speed
-float64 psa_actual_torque
