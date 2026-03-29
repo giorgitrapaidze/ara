@@ -10,6 +10,7 @@ const { generate }             = require('./data/generate');
 const { loadRealLaps }         = require('./data/real_laps');
 const { writeMcap }            = require('./data/mcap');
 const { extractVideoFromMcap } = require('./data/video');
+const { startFoxgloveServer }  = require('./data/foxglove');
 
 const REF_MCAP    = path.join(__dirname, 'reference.mcap');
 const CUR_MCAP    = path.join(__dirname, 'current.mcap');
@@ -158,8 +159,12 @@ async function start() {
     res.status(500).json({ error: err.message });
   });
 
+  // 6. Start Foxglove WebSocket server
+  startFoxgloveServer(reference, current);
+
   app.listen(3000, () => {
     console.log('\nCo-Driver backend running on http://localhost:3000');
+    console.log(`Foxglove WebSocket:  ws://localhost:8765`);
     console.log(`Data source: ${dataSource}`);
     console.log(`MCAP files written: reference.mcap, current.mcap`);
     console.log(`Anthropic coaching: ${coachingSource}`);
