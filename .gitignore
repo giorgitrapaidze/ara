@@ -1,4 +1,23 @@
-*
-!*.py
-!README*
-!.gitignore
+# Binary / large data files
+*.npy
+*.mcap
+*.mp4
+
+# Node
+node_modules/
+.tmp_frames/
+
+# Generated at runtime
+co-driver-backend/reference.mcap
+co-driver-backend/current.mcap
+co-driver-backend/generated.mp4
+
+# Logs
+*.log
+nohup.out
+
+# Env
+.env
+
+# OS
+.DS_Store
